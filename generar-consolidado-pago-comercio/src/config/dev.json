@@ -1,0 +1,25 @@
+{
+  "aws": {
+      "region": "us-east-1",
+      "s3_bucket": "bb-emisormdp-datastore",
+      "s3_input_prefix_fa_ca": "input-files/pagos_comercios/",
+      "s3_input_prefix_op_ce": "input-files/operaciones_diarias_consolidado/",
+      "s3_bucket_salida": "bb-adquirenciamdp-archivosfinales-dev2",
+      "secret_arn": "arn:aws:secretsmanager:us-east-1:308528169754:secret:bb-prueba-consolidado-8LkZrW",
+      "MIN_FILE_SIZE": 1024
+  },
+  "application": {
+    "log_level": "INFO",
+    "use_local_files": true,
+    "local_base_dir": "/home/glue_user/workspace",
+    "keywords": [],
+    "use_mysql_enrichment": true
+  },
+  "mysql": {
+    "host": "137.184.142.28",
+    "port": 3311,
+    "database": "pruebaBanco",
+    "user": "antonio-iroute",
+    "password": "25@nt0n10_anChundiA04"
+  }
+}
